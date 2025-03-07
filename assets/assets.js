@@ -36,7 +36,7 @@ import work3 from './work3.png';
 import work4 from './work4.png';
 import work5 from './work5.png';
 import work6 from './work6.png';
-import profile from './profile.png';
+import profile from './profile.jpg';
 import javascript from './javascript.png';
 import typescript from './typescript.png';
 
