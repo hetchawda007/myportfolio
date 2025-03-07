@@ -7,7 +7,7 @@ import axios from 'axios'
 const Contact = () => {
 
   const [formdata, setFormdata] = useState({ name: '', email: '', message: '' })
-  const [submit , setSubmit] = useState(false)
+  const [submit, setSubmit] = useState(false)
   const onSubmit = async (event) => {
     event.preventDefault();
     setSubmit(true)
@@ -82,7 +82,7 @@ const Contact = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none max-md:w-[114%]'>
+        id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none max-md:w-full'>
 
         <motion.h4
           initial={{ y: -20, opacity: 0 }}

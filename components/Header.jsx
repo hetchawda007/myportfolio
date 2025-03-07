@@ -35,7 +35,7 @@ const Header = ({ isDarkmode }) => {
         theme={isDarkmode ? 'colored' : 'dark'}
       />
 
-      <div className='w-11/12 md:max-w-3xl text-center mx-auto py-32 flex flex-col items-center justify-center gap-4 max-sm:w-[114%]'>
+      <div className='w-11/12 md:max-w-3xl text-center mx-auto py-32 flex flex-col items-center justify-center gap-4 max-sm:w-full'>
         <motion.div className='cursor-pointer'
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}

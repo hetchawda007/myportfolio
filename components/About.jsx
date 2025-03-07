@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const About = ({ isDarkMode }) => {
     return (
-        <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20 max-md:w-[114%]'
+        <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20 max-md:w-full'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

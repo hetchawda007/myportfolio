@@ -5,7 +5,7 @@ import { assets, infoList } from '@/assets/assets'
 
 const Skills = () => {
     return (
-        <motion.div id='skills' className='w-full px-[12%] py-10 scroll-mt-20 max-md:w-[114%]'
+        <motion.div id='skills' className='w-full px-[12%] py-10 scroll-mt-20 max-md:w-full'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

@@ -1,14 +1,14 @@
 import React from 'react'
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import {motion} from 'motion/react'
+import { motion } from 'motion/react'
 const Footer = ({ isDarkMode }) => {
   const handleMailClick = () => {
     window.location.href = 'mailto:me@hetchawda.in';
   };
 
   return (
-    <div className='mt-20 max-sm:w-[114%]'>
+    <div className='mt-20 max-sm:w-full'>
       <div className='text-center'>
 
         <a href="#top">

@@ -11,7 +11,7 @@ const Projects = ({ isDarkMode }) => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            id='projects' className='w-full px-[12%] py-10 scroll-mt-20 max-sm:w-[114%]'>
+            id='projects' className='w-full px-[12%] py-10 scroll-mt-20 max-sm:w-full'>
 
             <motion.h4
                 initial={{ y: -20, opacity: 0 }}
