@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
+import CursorAnimation from "@/components/CursorAnimation";
 
 export default function Home() {
 
@@ -33,6 +34,7 @@ export default function Home() {
 
   return (
     <>
+      <CursorAnimation isDarkMode={isDarkMode} />
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />

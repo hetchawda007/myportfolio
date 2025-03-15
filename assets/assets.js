@@ -130,7 +130,7 @@ export const workData = [
         description: 'A highly secure password management system that allows users to store and retrieve their credentials safely. It features localstorage and seamless access across devices.',
         bgImage: assets.work5,
         url1: 'https://ipassmanager-by-het.vercel.app/',
-        url2: 'https://github.com/hetchawda007/Password-manager',
+        url2: 'https://github.com/hetchawda007/PasswordManager',
         skills: ['React.js', 'Javascript', 'Responsiveness', 'Tailwind CSS', 'Secure storage']
     },
 ]
@@ -142,6 +142,7 @@ export const infoList = [
     'Typescript',
     'Tailwind CSS',
     'Framer-motion',
+    'Auth.js',
     'Node.js',
     'Express.js',
     'Context Api',
@@ -151,10 +152,14 @@ export const infoList = [
     'MongoDB',
     'Git',
     'Vercel',
-    'Netlify',
-    'Auth.js',
+    'Docker',
+    'AWS',
 ];
 
 export const toolsData = [
-    assets.firebase, assets.mongodb, assets.figma, assets.git
+    "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg",
+    assets.git,
+    assets.figma,
+    "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+    assets.mongodb,
 ];

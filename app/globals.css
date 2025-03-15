@@ -2,6 +2,231 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: Outfit;
+}
+
+body {
+  cursor: default;
+  overflow-x: hidden;
+}
+
+a,
+button,
+input,
+textarea,
+[role="button"],
+.cursor-pointer,
+select {
+  cursor: pointer;
+}
+
+.cursor-dot {
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease,
+    width 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.3s ease,
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.3s ease;
+  mix-blend-mode: normal;
+  will-change: transform, width, height;
+}
+
+.cursor-outline {
+  position: fixed;
+  z-index: 998;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-property: opacity, width, height, border-color, transform, background, box-shadow;
+  background: transparent;
+  backdrop-filter: blur(1px);
+  will-change: transform, width, height, border-color;
+}
+
+.cursor-dot-clicked {
+  width: 28px;
+  height: 28px;
+  filter: blur(1px);
+  mix-blend-mode: plus-lighter;
+}
+
+.cursor-outline-clicked {
+  width: 65px;
+  height: 65px;
+  border-width: 3px;
+  border-style: dashed;
+  animation: spin 8s linear infinite;
+}
+
+.cursor-dot-hover {
+  width: 16px;
+  height: 16px;
+  filter: blur(0.5px);
+}
+
+.cursor-outline-hover {
+  width: 70px;
+  height: 70px;
+  backdrop-filter: blur(2px);
+}
+
+.trail-dot {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 997;
+  transition: opacity 0.15s ease, filter 0.3s ease;
+  will-change: transform, opacity;
+}
+
+/* Animation keyframes */
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+.card-hover {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.5s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+.button-hover {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.button-hover:hover {
+  transform: translateY(-3px);
+}
+
+.button-hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: translateX(-100%) skewX(-15deg);
+  transition: transform 0.5s ease;
+}
+
+.button-hover:hover::after {
+  transform: translateX(100%) skewX(-15deg);
+}
+
+@media (max-width: 1024px) {
+  body {
+    cursor: auto;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  [role="button"],
+  .cursor-pointer,
+  select {
+    cursor: pointer;
+  }
+
+  .cursor-dot,
+  .cursor-outline,
+  .trail-dot {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #6366f1, #ec4899);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #4f46e5, #db2777);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 #f1f1f1;
+}
+
+.dark {
+  scrollbar-color: #6366f1 #1e1e1e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgba(99, 102, 241, 0.3);
+  color: inherit;
+}
+
+.dark ::selection {
+  background-color: rgba(168, 85, 247, 0.3);
+  color: inherit;
+}
+
+*:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
 }
