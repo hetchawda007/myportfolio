@@ -97,8 +97,7 @@ const Header = ({ isDarkMode }) => {
                 backgroundColor: isDarkMode ? 'rgb(30, 41, 59)' : 'rgb(249, 250, 251)',
                 color: isDarkMode ? 'rgb(255, 255, 255)' : 'rgb(0, 0, 0)'
               }}
-              href='/HET CHAWDA RESUME.pdf'
-              download="HET CHAWDA RESUME.pdf"
+              href="/resume.pdf" download 
               className='px-10 py-3.5 cursor-pointer border rounded-full border-gray-300 dark:border-gray-700 flex items-center gap-2 bg-white dark:bg-gray-800 dark:text-white hover:border-indigo-500 dark:hover:border-indigo-400 font-medium transition-all duration-300 shadow-md'
             >
               My resume
