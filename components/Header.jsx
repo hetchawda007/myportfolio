@@ -97,7 +97,13 @@ const Header = ({ isDarkMode }) => {
                 backgroundColor: isDarkMode ? 'rgb(30, 41, 59)' : 'rgb(249, 250, 251)',
                 color: isDarkMode ? 'rgb(255, 255, 255)' : 'rgb(0, 0, 0)'
               }}
-              href="/resume.pdf" download 
+              href="/resume.pdf" 
+              download
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('/resume.pdf', '_blank');
+              }}
+              rel="noopener noreferrer"
               className='px-10 py-3.5 cursor-pointer border rounded-full border-gray-300 dark:border-gray-700 flex items-center gap-2 bg-white dark:bg-gray-800 dark:text-white hover:border-indigo-500 dark:hover:border-indigo-400 font-medium transition-all duration-300 shadow-md'
             >
               My resume
