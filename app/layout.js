@@ -16,12 +16,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/profilephoto.png" type="image/png" />
       </head>
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
+        suppressHydrationWarning
       >
         {children}
       </body>
