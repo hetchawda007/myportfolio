@@ -150,6 +150,7 @@ export const infoList = [
     'REST API',
     'Socket.io',
     'MongoDB',
+    'MySQL',
     'Git',
     'Vercel',
     'AWS',
