@@ -259,7 +259,7 @@ const Contact = ({ isDarkMode }) => {
               </div>
               <h3 className="text-lg font-bold mb-2">Email</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">Feel free to email me anytime!</p>
-              <a href="mailto:me@hetchawda44@gmail.com" className="text-violet-600 dark:text-violet-400 hover:underline">me@hetchawda44@gmail.com</a>
+              <a href="mailto:hetchawda44@gmail.com" className="text-violet-600 dark:text-violet-400 hover:underline">hetchawda44@gmail.com</a>
             </motion.div>
 
             <motion.div
