@@ -89,7 +89,7 @@ export const workData = [
         title: 'Real-Time E2EE Chat Application',
         description: 'A secure and private chat application with end-to-end encryption, ensuring that user conversations remain confidential. It features real-time messaging, a seamless UI, and strong encryption protocols for enhanced security.',
         bgImage: assets.work2,
-        url1: 'https://chatthisway.vercel.app/',
+        url1: 'https://chatthisway.hetchawda.in/',
         url2: 'https://github.com/hetchawda007/Chatthisway',
         skills: ['React.js', 'Typescript', 'Framer-motion', 'Tailwind CSS', 'Context Api', 'Jwt Auth', 'Express.js', 'Socket.io', 'MongoDB']
     },
@@ -154,6 +154,8 @@ export const infoList = [
     'Git',
     'Vercel',
     'AWS',
+    'Redis',
+    'Docker',
 ];
 
 export const toolsData = [

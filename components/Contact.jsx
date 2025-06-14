@@ -34,7 +34,7 @@ const Contact = ({ isDarkMode }) => {
         const response = await axios.post(
           'https://api.brevo.com/v3/smtp/email',
           {
-            sender: { name: formdata.name, email: process.env.NEXT_PUBLIC_EMAIL },
+            sender: { name: formdata.name, email: 'deployment0007@gmail.com' },
             to: [{ email: process.env.NEXT_PUBLIC_EMAIL }],
             subject: `New message from ${formdata.name}`,
             htmlContent: `
