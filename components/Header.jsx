@@ -78,12 +78,12 @@ const Header = ({ isDarkMode }) => {
               transition={{ duration: 0.6, delay: 1 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, boxShadow: '0 10px 25px rgba(79, 70, 229, 0.4)' }}
-              href="#contact"
+              href="#experience"
               className='px-10 py-3.5 rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 text-white flex items-center gap-2 hover:from-indigo-700 hover:to-pink-600 font-medium transition-all duration-300 shadow-lg'
             >
-              Contact me
+              My Experience
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v6l-3-3-3 3V6"></path>
               </svg>
             </motion.a>
 

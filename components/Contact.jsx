@@ -17,7 +17,8 @@ const Contact = ({ isDarkMode }) => {
 
     if (!formdata.name || !formdata.email || !formdata.message || formdata.name.length < 3 || formdata.email.length < 6) {
       toast.error('Please fill valid details.');
-      setSubmit(false)
+      setSubmit(false)  
+      
       setIsLoading(false)
       return;
     }

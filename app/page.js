@@ -6,14 +6,17 @@ import Header from "../components/Header.jsx";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import CursorAnimation from "@/components/CursorAnimation";
 
 export default function Home() {
 
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isClientMounted, setIsClientMounted] = useState(false);
 
   useEffect(() => {
+    setIsClientMounted(true);
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDarkMode(true)
     } else {
@@ -22,14 +25,21 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = '';
+    if (isClientMounted) {
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = '';
+      }
     }
-  }, [isDarkMode])
+  }, [isDarkMode, isClientMounted])
+
+  // Prevent hydration mismatch by not rendering until client is mounted
+  if (!isClientMounted) {
+    return null;
+  }
 
 
   return (
@@ -39,6 +49,7 @@ export default function Home() {
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Skills isDarkMode={isDarkMode} />
+      <Experience isDarkMode={isDarkMode} />
       <Projects isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />

@@ -12,14 +12,14 @@ const ovo = Ovo({
 export const metadata = {
   title: "Portfolio - Het Chawda",
   description: "Full-Stack Developer with React, Next.js, Typescript, Nodejs, Express.js, MongoDB, Tailwind CSS, Socket.io, Motion.",
+  icons: {
+    icon: '/profilephotO.png',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/profilephoto.png" type="image/png" />
-      </head>
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
         suppressHydrationWarning

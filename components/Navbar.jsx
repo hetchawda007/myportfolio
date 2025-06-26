@@ -45,9 +45,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                     <li><a className='font-Ovo relative hover:text-red-600 transition-colors duration-300 after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full' href="#top">Home</a></li>
                     <li><a className='font-Ovo relative hover:text-red-600 transition-colors duration-300 after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full' href="#about">About me</a></li>
                     <li><a className='font-Ovo relative hover:text-red-600 transition-colors duration-300 after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full' href="#skills">Skills</a></li>
-                    <li><a className='font-Ovo relative hover:text-red-600 transition-colors duration-300 after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full' href="#projects">Projects</a></li>
-                    <li><a className='font-Ovo relative hover:text-red-600 transition-colors duration-300 after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full' href="#contact">Contact me</a></li>
-                </ul>
+                    <li><a className='font-Ovo relative hover:text-red-600 transition-colors duration-300 after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full' href="#experience">Experience</a></li>
+                    <li><a className='font-Ovo relative hover:text-red-600 transition-colors duration-300 after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full' href="#projects">Projects</a></li>                </ul>
 
                 <div className='flex items-center gap-4'>
 
@@ -74,8 +73,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                     <li><a className='font-Ovo hover:text-red-600 transition-all duration-300 hover:pl-2' onClick={closeMenu} href="#top">Home</a></li>
                     <li><a className='font-Ovo hover:text-red-600 transition-all duration-300 hover:pl-2' onClick={closeMenu} href="#about">About me</a></li>
                     <li><a className='font-Ovo hover:text-red-600 transition-all duration-300 hover:pl-2' onClick={closeMenu} href="#skills">Skills</a></li>
+                    <li><a className='font-Ovo hover:text-red-600 transition-all duration-300 hover:pl-2' onClick={closeMenu} href="#experience">Experience</a></li>
                     <li><a className='font-Ovo hover:text-red-600 transition-all duration-300 hover:pl-2' onClick={closeMenu} href="#projects">Projects</a></li>
-                    <li><a className='font-Ovo hover:text-red-600 transition-all duration-300 hover:pl-2' onClick={closeMenu} href="#contact">Contact me</a></li>
+                    <li><a className='font-Ovo hover:text-red-600 transition-all duration-300 hover:pl-2' onClick={closeMenu} href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </>
