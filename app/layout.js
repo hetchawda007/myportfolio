@@ -13,7 +13,7 @@ export const metadata = {
   title: "Portfolio - Het Chawda",
   description: "Full-Stack Developer with React, Next.js, Typescript, Nodejs, Express.js, MongoDB, Tailwind CSS, Socket.io, Motion.",
   icons: {
-    icon: '/profilephotO.png',
+    icon: '/profilephot.png',
   },
 };
 
